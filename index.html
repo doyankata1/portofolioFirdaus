@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio - Freelance AI Automation & Web Development</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { background: #f8fafc; color: #1e293b; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid #e2e8f0; }
+  header h1 { font-size: 32px; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+  header p { font-size: 18px; color: #64748b; max-width: 600px; margin: 0 auto; }
+  .badge { display: inline-block; background: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; margin-top: 12px; }
+  .section { margin-bottom: 40px; }
+  .section h2 { font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .section h2::before { content: ''; width: 4px; height: 24px; background: #2563eb; border-radius: 2px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; transition: box-shadow 0.2s, transform 0.2s; }
+  .card:hover { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); transform: translateY(-2px); }
+  .card h3 { font-size: 16px; font-weight: 600; color: #0f172a; margin-bottom: 8px; }
+  .card p { font-size: 14px; color: #64748b; margin-bottom: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .tag { background: #f1f5f9; color: #475569; padding: 4px 10px; border-radius: 9999px; font-size: 11px; font-weight: 500; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; }
+  .btn:hover { background: #1d4ed8; }
+  .btn-outline { background: transparent; color: #2563eb; border: 1px solid #2563eb; }
+  .btn-outline:hover { background: #eff6ff; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .service { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; }
+  .service h4 { font-size: 15px; font-weight: 600; color: #0f172a; margin-bottom: 6px; }
+  .service p { font-size: 13px; color: #64748b; }
+  .contact { text-align: center; padding: 30px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; }
+  .contact h2 { margin-bottom: 12px; }
+  .contact p { color: #64748b; margin-bottom: 20px; }
+  .contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .contact-links a { color: #2563eb; text-decoration: none; font-weight: 500; font-size: 14px; }
+  .contact-links a:hover { text-decoration: underline; }
+  footer { text-align: center; margin-top: 40px; padding-top: 20px; color: #94a3b8; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Freelance AI Automation & Web Development</h1>
+    <p>Membantu UMKM & Startup mengotomatiskan proses bisnis dengan n8n, AI, dan custom web app. Hemat waktu, kurangi error, skala tanpa tambah karyawan.</p>
+    <span class="badge">Tersedia untuk Project Baru</span>
+  </header>
+
+  <section class="section">
+    <h2>Demo Project (Siap Dicoba)</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🤖 WhatsApp CS Bot + Google Sheets</h3>
+        <p>Auto-reply FAQ pelanggan via WhatsApp, log percakapan otomatis ke Sheets. Cocok untuk toko online, travel, klinik, properti.</p>
+        <div class="tags">
+          <span class="tag">n8n</span>
+          <span class="tag">WhatsApp API</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Webhook</span>
+        </div>
+        <a href="#" class="btn btn-outline" onclick="alert('File: workflow-1-wa-cs-bot.json — Import di n8n → Setup credentials Google Sheets & WhatsApp → Aktifkan')">Cara Pakai Demo</a>
+      </div>
+      <div class="card">
+        <h3>📅 Invoice Reminder Otomatis</h3>
+        <p>Cron harian cek invoice di Sheets → kirim reminder WA ke klien (H-3, H-1, H, H+1). Log reminder otomatis. Cocok freelance, agency, B2B.</p>
+        <div class="tags">
+          <span class="tag">n8n</span>
+          <span class="tag">Cron</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">WhatsApp</span>
+        </div>
+        <a href="#" class="btn btn-outline" onclick="alert('File: workflow-2-invoice-reminder.json — Import di n8n → Setup credentials → Aktifkan')">Cara Pakai Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Layanan Utama</h2>
+    <div class="services">
+      <div class="service"><h4>AI Automation (n8n/Make)</h4><p>Otomatisasi workflow: lead capture, CS bot, invoice reminder, sinkronisasi data, laporan otomatis.</p></div>
+      <div class="service"><h4>Custom Web App</h4><p>Dashboard internal, portal klien, form dinamis, integrasi API. Stack: Next.js, React, Supabase, Vercel.</p></div>
+      <div class="service"><h4>Google Workspace Automation</h4><p>Apps Script: laporan otomatis, absensi, stok, invoice generator, mail merge, sinkronisasi antar Sheet.</p></div>
+      <div class="service"><h4>AI Chatbot & Agent</h4><p>Chatbot FAQ, order taking, lead qualification. Integrasi OpenAI/Claude + WhatsApp/Telegram/Web.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Cara Kerja</h2>
+    <div class="grid">
+      <div class="card" style="text-align:center;"><h3>1. Konsultasi Gratis</h3><p>Diskusikan masalah bisnis & target. Saya rekomendasikan solusi tepat, bukan yang mahal.</p></div>
+      <div class="card" style="text-align:center;"><h3>2. Proposal & Timeline</h3><p>Dapatkan proposal harga fixed + timeline jelas. Tanpa biaya tersembunyi.</p></div>
+      <div class="card" style="text-align:center;"><h3>3. Develop & Test</h3><p>Bangun solusi, demo berkala, revisi hingga puas. Deploy ke server/client.</p></div>
+      <div class="card" style="text-align:center;"><h3>4. Handover & Support</h3><p>Dokumentasi lengkap, video tutorial, support 1 bulan pasca-launch.</p></div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2>Mulai Project?</h2>
+    <p>Kirim pesan via WhatsApp/Email untuk diskusi kebutuhan & estimasi harga. Balasan < 2 jam jam kerja.</p>
+    <div class="contact-links">
+      <a href="https://wa.me/628xxxxxxxxxx" target="_blank">📱 WhatsApp</a>
+      <a href="mailto:email@domain.com">✉️ Email</a>
+      <a href="https://github.com/username" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/username" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    Dibangun dengan HTML/CSS/JS vanilla — deploy gratis ke GitHub Pages, Netlify, atau Vercel.
+  </footer>
+</div>
+</body>
+</html>
